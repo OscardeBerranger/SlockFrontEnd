@@ -1,0 +1,8 @@
+<p>friends works!</p>
+<button (click)="router.navigate(['/addfriend'])">Add some friends</button>
+<div *ngFor="let friend of friends">
+  <p>{{friend.username}}</p>
+  <button (click)="privateConverationHandler(friend.id)">
+    Let's chat
+  </button>
+</div>
